@@ -9,9 +9,9 @@
 #    preco = float(input("Digite o preço: "))
 #
 #    if q_produto >= 0 and preco >= 0:
-#        pass
+#        print("Dados válidos")
 #    else:
-#        print("Valor negativo não é permitido")
+#        print("Dados inválidos")
 
 #except ValueError:
 #    print("Dado invalido")
