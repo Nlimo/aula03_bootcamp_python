@@ -24,7 +24,17 @@
 #Temperatura >= 18°C e <= 26°C é 'Normal'
 #Temperatura > 26°C é 'Alta'
 
-
+#try:
+#    temperatuda = float(input("Digite uma temperatura em celsius: "))
+#
+#    if temperatuda < 18:
+#        print((f"{temperatuda} é uma temperatura baixa"))
+#    elif temperatuda > 26:
+#        print((f"{temperatuda} é uma temperatura alta"))
+#    else:
+#        print((f"{temperatuda} é uma temperatura normal"))
+#except ValueError:
+#    print("Digite um valor válido")
 
 ### Exercício 3: Filtragem de Logs por Severidade
 # Você está analisando logs de uma aplicação e precisa filtrar mensagens 
