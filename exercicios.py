@@ -107,21 +107,32 @@
 ### Exercício 8. Filtragem de Dados Faltantes
 # Objetivo:** Dada uma lista de dicionários representando dados de usuários, filtrar aqueles que têm um campo específico faltando
 
-usuario = [
-    {"nome" : "lucas", "user_id": ""},
-    {"nome" : "lais", "user_id": "124"},
-    {"nome" : "carol", "user_id": "123"}
-]
+#usuario = [
+#    {"nome" : "lucas", "user_id": ""},
+#    {"nome" : "lais", "user_id": "124"},
+#    {"nome" : "carol", "user_id": "123"}
+#]
 
-for x in usuario:
-    if x["user_id"] == "":
-        print(f"usuairo {x['nome']} não possui user_id ")
-    else:
-        print(f"usuairo {x['nome']} possui user_id")
+#for x in usuario:
+#    if x["user_id"] == "":
+#        print(f"usuairo {x['nome']} não possui user_id ")
+#    else:
+#        print(f"usuairo {x['nome']} possui user_id")
 
 ### Exercício 9. Extração de Subconjuntos de Dados
 # Objetivo:** Dada uma lista de números, extrair apenas aqueles que são pares.
 
+numeros = [1, 2, 3, 4, 5]
+
+extracao_numero = []
+
+for x in numeros:
+    if x % 2 == 0:
+        extracao_numero.append(x)
+
+print(extracao_numero)
+
+        
 ### Exercício 10. Agregação de Dados por Categoria
 # Objetivo:** Dado um conjunto de registros de vendas, calcular o total de vendas por categoria.
 
