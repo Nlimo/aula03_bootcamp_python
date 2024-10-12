@@ -122,20 +122,40 @@
 ### Exercício 9. Extração de Subconjuntos de Dados
 # Objetivo:** Dada uma lista de números, extrair apenas aqueles que são pares.
 
-numeros = [1, 2, 3, 4, 5]
+#numeros = [1, 2, 3, 4, 5]
 
-extracao_numero = []
+#extracao_numero = []
 
-for x in numeros:
-    if x % 2 == 0:
-        extracao_numero.append(x)
+#for x in numeros:
+#    if x % 2 == 0:
+#        extracao_numero.append(x)
 
-print(extracao_numero)
+#print(extracao_numero)
 
         
 ### Exercício 10. Agregação de Dados por Categoria
 # Objetivo:** Dado um conjunto de registros de vendas, calcular o total de vendas por categoria.
 
+vendas = [
+    {"categoria": "shop", "vendas": 2},
+    {"categoria": "shop", "vendas": 5},
+    {"categoria": "shop", "vendas": 3},
+    {"categoria": "mercado", "vendas": 1},
+    {"categoria": "mercado", "vendas": 5},
+    {"categoria": "mercado", "vendas": 2},
+]
+
+vendas_shop = 0
+vendas_mercado = 0
+
+for x in vendas:
+    if x["categoria"] == "shop":
+        vendas_shop = vendas_shop + x["vendas"]
+    else:
+        vendas_mercado = vendas_mercado + x["vendas"]
+
+
+print(f"Quantida de vendas por merdaco: {vendas_mercado}, por shop: {vendas_shop}")
 ### Exercícios com WHILE
 
 ### Exercício 11. Leitura de Dados até Flag
