@@ -189,12 +189,25 @@
 ### Exercício 14. Tentativas de Conexão
 # Simular tentativas de reconexão a um serviço com um limite máximo de tentativas.
 
-limit = 5
-tentativa = 0
-
-while tentativa != limit:
-    print(f"Tentando se conectar... {tentativa}")
-    tentativa = tentativa + 1
+#limit = 5
+#tentativa = 0
+#
+#while tentativa != limit:
+#    print(f"Tentando se conectar... {tentativa}")
+#    tentativa = tentativa + 1
 
 ### Exercício 15. Processamento de Dados com Condição de Parada
 # Processar itens de uma lista até encontrar um valor específico que indica a parada.
+
+#frase = input("Digite uma frase: ")
+
+#lista = frase.split()
+
+#n = 0
+
+#while lista[n] != "parar":
+#    print(f"Processando lista... {lista[n]}")
+#    n = n + 1
+#    if lista == 'parar':
+#        print("Encerrando processamento")
+    
