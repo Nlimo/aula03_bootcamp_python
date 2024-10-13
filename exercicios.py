@@ -136,30 +136,34 @@
 ### Exercício 10. Agregação de Dados por Categoria
 # Objetivo:** Dado um conjunto de registros de vendas, calcular o total de vendas por categoria.
 
-vendas = [
-    {"categoria": "shop", "vendas": 2},
-    {"categoria": "shop", "vendas": 5},
-    {"categoria": "shop", "vendas": 3},
-    {"categoria": "mercado", "vendas": 1},
-    {"categoria": "mercado", "vendas": 5},
-    {"categoria": "mercado", "vendas": 2},
-]
+#vendas = [
+#    {"categoria": "shop", "vendas": 2},
+#    {"categoria": "shop", "vendas": 5},
+#    {"categoria": "shop", "vendas": 3},
+#    {"categoria": "mercado", "vendas": 1},
+#    {"categoria": "mercado", "vendas": 5},
+#    {"categoria": "mercado", "vendas": 2},
+#]
 
-vendas_shop = 0
-vendas_mercado = 0
+#vendas_shop = 0
+#vendas_mercado = 0
 
-for x in vendas:
-    if x["categoria"] == "shop":
-        vendas_shop = vendas_shop + x["vendas"]
-    else:
-        vendas_mercado = vendas_mercado + x["vendas"]
+#for x in vendas:
+#    if x["categoria"] == "shop":
+#        vendas_shop = vendas_shop + x["vendas"]
+#    else:
+#        vendas_mercado = vendas_mercado + x["vendas"]
 
-
-print(f"Quantida de vendas por merdaco: {vendas_mercado}, por shop: {vendas_shop}")
+#print(f"Quantida de vendas por merdaco: {vendas_mercado}, por shop: {vendas_shop}")
 ### Exercícios com WHILE
 
 ### Exercício 11. Leitura de Dados até Flag
 # Ler dados de entrada até que uma palavra-chave específica ("sair") seja fornecida.
+
+resposta = ""
+
+while resposta.lower() != "sair":
+    resposta = input("Gostaria de continuar, ou gostaria de sair (digite sair)? ")
 
 ### Exercício 12. Validação de Entrada
 # Solicitar ao usuário um número dentro de um intervalo específico até que a entrada seja válida.
