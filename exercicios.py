@@ -177,17 +177,24 @@
 ### Exercício 13. Consumo de API Simulado
 # Simular o consumo de uma API paginada, onde cada "página" de dados é processada em loop até que não haja mais páginas.
 
-atual_pagina = 1
-total_paginas = 5
+#atual_pagina = 1
+#total_paginas = 5
 
-while atual_pagina != total_paginas:
-    print(f"Página {atual_pagina} processada")
-    atual_pagina = atual_pagina + 1
+#while atual_pagina != total_paginas:
+#    print(f"Página {atual_pagina} processada")
+#    atual_pagina = atual_pagina + 1
 
-print("Todas páginas foram processadas")
+#print("Todas páginas foram processadas")
 
 ### Exercício 14. Tentativas de Conexão
 # Simular tentativas de reconexão a um serviço com um limite máximo de tentativas.
+
+limit = 5
+tentativa = 0
+
+while tentativa != limit:
+    print(f"Tentando se conectar... {tentativa}")
+    tentativa = tentativa + 1
 
 ### Exercício 15. Processamento de Dados com Condição de Parada
 # Processar itens de uma lista até encontrar um valor específico que indica a parada.
