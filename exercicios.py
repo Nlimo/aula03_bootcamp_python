@@ -168,14 +168,23 @@
 ### Exercício 12. Validação de Entrada
 # Solicitar ao usuário um número dentro de um intervalo específico até que a entrada seja válida.
 
-result = int(input("Digite um número entre 1 e 10: "))
+#result = int(input("Digite um número entre 1 e 10: "))
 
-while (result < 1 or result > 10):
-    result = int(input("Digite um número entre 1 e 10: "))
+#while (result < 1 or result > 10):
+#    result = int(input("Digite um número entre 1 e 10: "))
 
 
 ### Exercício 13. Consumo de API Simulado
 # Simular o consumo de uma API paginada, onde cada "página" de dados é processada em loop até que não haja mais páginas.
+
+atual_pagina = 1
+total_paginas = 5
+
+while atual_pagina != total_paginas:
+    print(f"Página {atual_pagina} processada")
+    atual_pagina = atual_pagina + 1
+
+print("Todas páginas foram processadas")
 
 ### Exercício 14. Tentativas de Conexão
 # Simular tentativas de reconexão a um serviço com um limite máximo de tentativas.
